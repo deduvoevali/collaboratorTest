@@ -1,0 +1,22 @@
+//libs
+@import 'libraries/bootstrap-reboot.min';
+
+//base files
+@import 'base/mixins';
+@import 'base/variables';
+
+.container {
+    margin: 0 0 0 13.57857%;
+    max-width: 960px;
+}
+
+* {
+    font-family: system-ui, -apple-system, Roboto, sans-serif;
+}
+
+//content
+@import 'block/general';
+@import 'block/modal';
+
+//media
+@import 'base/media';

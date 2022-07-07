@@ -1,0 +1,46 @@
+@media (max-width: 1300px) {
+    .container {
+        margin: 0 auto;
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 0 auto;
+        padding: 0 15% 0;
+    }
+}
+
+
+
+@media (max-width: 780px) {
+    .container {
+        margin: 0 auto;
+        padding: 0 5% 0;
+    }
+
+    .settings {
+        .item {
+            display: block;
+            margin-bottom: 40px;
+
+            &__labels {
+                color: rgba(0, 0, 0, 0.463) !important;
+            }
+        }
+
+        &__sites {
+            .item {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        .details {
+            left: 70px !important;
+            top: 1px !important;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.modal__more,
+.modal__save {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.464);
+
+    .modal__inner {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        min-height: 300px;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 15px;
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 18px;
+            cursor: pointer;
+
+            &:hover {
+                fill: red;
+            }
+        }
+    }
+}
+
+.modal__more--active,
+.modal__save--active {
+    display: block;
+
+    .modal__inner {
+        display: block;
+    }
+}
