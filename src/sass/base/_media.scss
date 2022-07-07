@@ -30,6 +30,10 @@
             }
         }
 
+        .flags-wrapper {
+            margin: 0 0 20px !important;
+        }
+
         &__sites {
             .item {
                 display: flex;
@@ -41,6 +45,13 @@
         .details {
             left: 70px !important;
             top: 1px !important;
+        }
+    }
+
+    .modal__more,
+    .modal__save {
+        .modal__inner {
+            width: 80%;
         }
     }
 }

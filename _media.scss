@@ -47,4 +47,11 @@
             top: 1px !important;
         }
     }
+
+    .modal__more,
+    .modal__save {
+        .modal__inner {
+            width: 80%;
+        }
+    }
 }

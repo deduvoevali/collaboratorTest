@@ -1,10 +1,10 @@
 'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
-   
+
     //modals 
-    
-    const detailsLink = document.querySelectorAll('#search-details'),
+
+    const detailsLink = document.querySelectorAll('.details'),
         modalMore = document.querySelector('#modal__more'),
         modalSave = document.querySelector('#modal__save'),
         saveBtn = document.querySelector('#save'),
