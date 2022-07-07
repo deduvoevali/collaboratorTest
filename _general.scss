@@ -1,0 +1,225 @@
+.info {
+    padding: 100px 0 0;
+}
+
+.settings {
+    padding: 0 0 62px;
+
+    .wrapper {
+        padding: 53px 0 0 0;
+    }
+
+    &__heading {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 32px;
+    }
+
+
+    .item {
+        display: grid;
+        grid-template-columns: 64.23% 30%;
+        gap: 59px;
+
+        &__descr {
+            margin: 0;
+            font-size: 16px;
+            margin: 0 30px 16px 0;
+        }
+
+        &__switch {
+            display: block;
+            position: relative;
+            width: 39px;
+            height: 22px;
+            -webkit-appearance: none;
+            outline: none;
+            background-color: #fff;
+            border-radius: 50px;
+            box-shadow: inset 0 0 5px rgb(175, 175, 175);
+            cursor: pointer;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                right: 45.7%;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 18px;
+                height: 18px;
+                background-color: #fff;
+                border-radius: 50%;
+                box-shadow: 0px 1px 5px rgb(170, 170, 170);
+                transition: 0.2s all;
+            }
+
+            &:checked {
+                transition: 0.2s all;
+                background-color: #3861FB;
+                box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.561);
+
+                &:before {
+                    right: 3px;
+                    box-shadow: 0 0 3px rgb(52, 52, 52);
+                }
+            }
+        }
+
+        &__content {
+            display: flex;
+            align-items: top;
+            justify-content: space-between;
+        }
+
+        &__labels {
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+
+        &__select {
+            display: block;
+            width: 100%;
+            height: 40px;
+            outline: none;
+            padding: 0 0 0 17px;
+
+            font-size: 14px;
+            line-height: 19px;
+            color: #858585;
+
+            border: solid 2px #DDDDDD;
+            border-radius: 10px;
+            appearance: none;
+        }
+
+        &__select-wrapper {
+            position: relative;
+            width: 100%;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 15px;
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: url('../icons/select.svg') no-repeat right;
+            }
+        }
+    }
+
+    &__sites {
+        .item {
+            display: flex;
+            justify-content: space-between;
+            width: 64.23%;
+        }
+    }
+
+    &__agents {
+        margin-bottom: 50px;
+
+        .settings__heading {
+            font-size: 14px;
+        }
+
+        .item {
+            margin-bottom: 25px;
+
+            &__content {
+                position: relative;
+            }
+
+            &__descr {
+                margin: 0 0 11px 0;
+            }
+
+            .flags-wrapper {
+                display: flex;
+                justify-content: left;
+                gap: 25px;
+
+            }
+
+            .flag {
+                display: flex;
+
+                &__descr {
+                    font-size: 12px;
+                    margin: 0;
+                    margin-right: 5px;
+                }
+
+                &__remove {
+                    margin-top: 2px;
+                    cursor: pointer;
+                }
+            }
+
+            .details {
+                position: absolute;
+                left: 50%;
+                top: 0;
+                text-decoration: none;
+                font-size: 14px;
+                color: #3861FB;
+            }
+
+            &__labels {
+                margin: 0;
+                line-height: 19px;
+            }
+        }
+    }
+
+    &__adv-company {
+        .settings__heading {
+            font-size: 14px;
+        }
+
+        .settings__item {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 20px;
+        margin-top: 62px;
+
+        .button {
+            display: block;
+            width: 213px;
+            height: 50px;
+            border: none;
+            border-radius: 5px;
+            padding: 0;
+            transition: 0.1s all;
+            line-height: 1.1;
+
+        }
+
+        .default {
+            background-color: #fff;
+            color: #3861FB;
+
+            &:active {
+                border: 1px solid #3861FB;
+            }
+
+        }
+
+        .save {
+            background-color: #3861FB;
+            color: #fff;
+
+            &:active {
+                background-color: #3862fbd8;
+            }
+        }
+    }
+}
