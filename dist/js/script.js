@@ -27,9 +27,9 @@ window.addEventListener('DOMContentLoaded', () => {
     modalMore.addEventListener('click', (e) => {
         if (e.target.className == 'modal__more modal__more--active' || e.target.id == 'close') modalMore.classList.remove('modal__more--active');
     });
+    
     modalSave.addEventListener('click', (e) => {
         if (e.target.className == 'modal__save modal__save--active' || e.target.id == 'close') modalSave.classList.remove('modal__save--active');
-
     });
 
     defaultBtn.addEventListener('click', () => {
